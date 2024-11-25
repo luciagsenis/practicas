@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width">
+         <script type="text/javascript" src="./scripting_example.js"></script>
+         <title>SCRIPTING</title>
+        </head>
+<body>
+    <details>
+        <summary>Más información</summary>
+        <h2>Nombre</h2>
+        <img src="foto.jpg" alt="Foto" />
+       </details>
+
+       <dialog id="alert">
+        <p>¡Hola!</p>
+        <button id="close" onclick="document.getElementById('alert').close()">Ok!</button>
+       </dialog>
+       <button id="show" onclick="document.getElementById('alert').show()">Mostrar</button>
+
+       <dialog id="gandalfModal">
+        <img src="gandalf.jpg" alt="Gandalf" />
+        <p>¡NO.. PUEDES... PASAR!</p>
+        <button id="close" onclick="document.getElementById('gandalfModal').close()">
+       Ok!</button>
+       </button>
+
+       <!--Modales: ventanas que aparecen en pantalla y que no se quitan hasta que el usuario realiza la acción 
+       que se le pide de el modal. Por ejemplo, avisos de cookies-->
+       </dialog>
+       <button id="show" onclick="document.getElementById('gandalfModal').showModal()">
+       Mostrar
+       </button>
+
+       <h3 contenteditable>Título</h3>
+<div contenteditable>
+ <p>Este es un párrafo modificable de ejemplo</p>
+</div>
+
+<p id="example" onclick="myFunction()">Haz click para cambiarme de color.</p>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title>Footer</title>
+</head>
+<body>
+ <select name="ciudad">
+ <optgroup label="Europa">
+ <option>Madrid</option>
+ <option>Londres</option>
+ <option>Paris</option>
+ </optgroup>
+ <optgroup label="Suramerica">
+ <option>Santiago</option>
+ <option>Sao Paulo</option>
+ <option>Lima</option>
+ <option>Bogota</option>
+ </optgroup>
+ <optgroup label="Africa">
+ <option>Casablanca</option>
+ <option>Ciudad del Cabo</option>
+ </optgroup>
+ </select>
+
+ <form name="formulario" method="post" action="/send.php">
+    <!-- Campo de texto combinado con lista de opciones -->
+    <input type="text" list="items" />
+    <!-- Lista de opciones -->
+    <datalist id="items">
+    <option value="1">Opción 1</option>
+    <option value="2">Opción 2</option>
+    <option value="3">Opción 3</option>
+    </datalist>
+
+    <input type="color" name="color" value="#FF0000" />
+   </form>
+
+   <form action="/next-page" method="post">
+      <fieldset>
+      <legend>Datos Básicos</legend>
+      </fieldset>
+
+      <label for="name">Nombre</label>
+<input type="text" name="name" id="name">
+
+<form>
+   <label for="files">Select files:</label>
+   <input type="file" id="files" name="files" multiple>
+  </form>
+     </form>
+
+     <form method="post" action="/coche">
+      <label for="coche">Coche:</label>
+      <input type="text" name="coche"
+     placeholder="Su modelo de coche" required
+      pattern="A|a(1|3|4|6)"
+     title="Modelos posibles: A1, A3, A4 y A6">
+      <button type="submit">Enviar</button>
+     </form>
+</body>
+</html>
